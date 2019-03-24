@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import { KeyboardAvoidingView, StyleSheet, ImageBackground } from 'react-native';
 import Login from './screens/Login';
+import Register from './screens/Register'
 import {w} from './api/Dimensions';
 
 export default class index extends Component{
@@ -24,10 +25,10 @@ export default class index extends Component{
         case 'login':
             screenToShow = <Login change={this.changeScreen} success={this.userSuccessfullyLoggedIn}/>;
             break;
-        /*case 'register':
+        case 'register':
             screenToShow = <Register change={this.changeScreen} />;
             break;
-        case 'forgot':
+        /*case 'forgot':
             screenToShow = <ForgotPassword change={this.changeScreen}/>;
             break;*/
         }
