@@ -57,8 +57,8 @@ export default class Login extends Component {
           placeholder="Email"
           keyboardType="email-address"
           style={styles.email}
-          error={this.state.isEmailCorrect}
-          focus={this.changeInputFocus}
+          /*error={this.state.isEmailCorrect}
+          focus={this.changeInputFocus}*/
           ref={ref => this.email = ref}
           icon={email}
         />
@@ -67,7 +67,7 @@ export default class Login extends Component {
           returnKeyType="done"
           secureTextEntry={true}
           blurOnSubmit={true}
-          error={this.state.isPasswordCorrect}
+          //error={this.state.isPasswordCorrect}
           ref={ref => this.password = ref}
           focus={this.changeInputFocus}
           icon={password}

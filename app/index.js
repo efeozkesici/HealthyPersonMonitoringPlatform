@@ -2,8 +2,9 @@ import React, {Component} from 'react';
 import propTypes from 'prop-types';
 import { KeyboardAvoidingView, StyleSheet, ImageBackground } from 'react-native';
 import Login from './screens/Login';
+import {w} from './api/Dimensions';
 
-export default class app extends Component{
+export default class index extends Component{
     state = {
         currentScreen : 'login',
     }
