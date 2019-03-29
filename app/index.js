@@ -3,6 +3,7 @@ import propTypes from 'prop-types';
 import { KeyboardAvoidingView, StyleSheet, ImageBackground } from 'react-native';
 import Login from './screens/Login';
 import Register from './screens/Register'
+import ForgotPassword from './screens/ForgotPassword';
 import {w} from './api/Dimensions';
 
 export default class index extends Component{
@@ -28,9 +29,9 @@ export default class index extends Component{
         case 'register':
             screenToShow = <Register change={this.changeScreen} />;
             break;
-        /*case 'forgot':
+        case 'forgot':
             screenToShow = <ForgotPassword change={this.changeScreen}/>;
-            break;*/
+            break;
         }
 
         return (
@@ -43,7 +44,6 @@ export default class index extends Component{
             source={this.props.background}
             style={styles.background}
             resizeMode="stretch"
-
             >
             {screenToShow}
             </ImageBackground>
