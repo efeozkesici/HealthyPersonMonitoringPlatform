@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     borderRadius: w(10),
     borderColor: '#ddd',
     borderWidth: 1,
-    width: '85%',
+    width: '65%',
   },
   containerError: {
     backgroundColor: '#EF9A9A88',

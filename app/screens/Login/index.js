@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TouchableOpacity, Text, Image} from 'react-native';
 import InputField from "../../components/InputField";
+import Button from "../../components/Button";
 import GetStarted from './GetStarted';
 import {w, h, totalSize} from '../../api/Dimensions';
 

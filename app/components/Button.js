@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, TouchableOpacity, Text} from 'react-native';7
+import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';7
 import propTypes from 'prop-types';
 
 type props = any;
@@ -23,9 +23,9 @@ export default class Button extends Component<props>{
 }
 
 Button.propTypes = {
-    text: PropTypes.string,
-    buttonTextStyle: PropTypes.object,
-    buttonStyle: PropTypes.object,
+    text: propTypes.string,
+    buttonTextStyle: propTypes.object,
+    buttonStyle: propTypes.object,
   };
   Button.defaultProps = {
     text: 'Button',
