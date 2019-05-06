@@ -67,6 +67,18 @@ const styles = {
     marginLeft: screenWidth * 0.20
   },
 
+  buttonStyle: {
+    backgroundColor: '#FF0000',
+    width:250,
+    height: screenHeight*0.045
+  },
+
+  buttonTextStyle: {
+    fontWeight: 'Apple SD Gothic Neo',
+    color: '#206C9D',
+    fontSize: 18
+  }
+
   /*container: {
     flex: 1,
     backgroundColor: '#fff',

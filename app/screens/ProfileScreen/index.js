@@ -1,17 +1,32 @@
 /* @flow */
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import styles from './styles';
 import firebase from 'react-native-firebase';
+import { Navigate } from 'utils';
+import { Button } from 'components';
 
 type Props = any;
 
 class ProfileScreen extends Component<Props> {
 
+  static defaultProps: any;
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      serviceCall: false,
+    };
+    const {
+      props: { componentId },
+    } = this;
+  }
+
   signOut(): void {
     firebase.auth().signOut().then(function() {
-      // Sign-out successful.
+      Navigate.push(componentId, 'LoginScreen');
     }).catch(function(error) {
       // An error happened.
     });
@@ -39,6 +54,12 @@ class ProfileScreen extends Component<Props> {
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
                 <Text>Kilo:</Text> 
               </TouchableOpacity>
+              <Button
+              buttonStyle = {styles.logoutButton}
+              buttonTextStyle = {styles.logoutButtonText}
+              text = "Cikis Yap"
+              onPress={() => {this.signOut();}}
+              />
             </View>
         </View>
       </View>
