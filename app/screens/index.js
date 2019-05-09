@@ -6,7 +6,7 @@ import LoginScreen from './LoginScreen';
 import HomeScreen from './HomeScreen';
 import ProfileScreen from './ProfileScreen';
 import MessagingScreen from './MessagingScreen';
-//import ForgotPasswordScreen from './ForgotPasswordScreen';
+import ForgotPasswordScreen from './ForgotPasswordScreen';
 
 // registering all screens with redux...
 export default function registerScreens(store: any = null) {
@@ -15,5 +15,5 @@ export default function registerScreens(store: any = null) {
   Navigation.registerComponent('HomeScreen', Redux.reduxStoreWrapper(HomeScreen, store));
   Navigation.registerComponent('ProfileScreen', Redux.reduxStoreWrapper(ProfileScreen, store));
   Navigation.registerComponent('MessagingScreen', Redux.reduxStoreWrapper(MessagingScreen, store));
-  //Navigation.registerComponent('ForgotPasswordScreen', Redux.reduxStoreWrapper(ForgotPasswordScreen, store));
+  Navigation.registerComponent('ForgotPasswordScreen', Redux.reduxStoreWrapper(ForgotPasswordScreen, store));
 }

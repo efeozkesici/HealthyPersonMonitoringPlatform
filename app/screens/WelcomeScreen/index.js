@@ -25,20 +25,6 @@ class WelcomeScreen extends Component<Props, State> {
       props: { componentId },
     } = this;
     this.state = {
-      /*swipeElements: [
-        { text: 'First Swipe', key: 'first' },
-        { text: 'Second Swipe', key: 'second' },
-        {
-          text: 'Third Swipe',
-          key: 'third',
-          button: true,
-          buttonText: 'Start',
-          onPressButton: () => {
-            Navigate.push(componentId, 'LoginScreen');
-          },
-        },
-      ],
-      showDots: true,*/
       swipeElements: [
         {
           image1: 'infusion_icon',
@@ -63,34 +49,6 @@ class WelcomeScreen extends Component<Props, State> {
   }
 
   render() {
-    /*const {
-      state: { showDots, swipeElements },
-    } = this;*/
-    /*return (
-      <View style={styles.container}>
-        <Swiper
-          onMomentumScrollEnd={(e, state) => {
-            if (state.index === 2) {
-              this.setState({ showDots: false });
-            } else {
-              this.setState({ showDots: true });
-            }
-          }}
-          loop={false}
-          showsPagination={showDots}
-        >
-          {swipeElements.map(item => (
-            <SwiperRow
-              text={item.text}
-              button={item.button}
-              buttonText={item.buttonText}
-              onPressButton={item.onPressButton}
-              key={item.key}
-            />
-          ))}
-        </Swiper>
-      </View>
-    );*/
     return (
       <View style = {styles.container}>
         <Swiper

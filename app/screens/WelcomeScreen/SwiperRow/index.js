@@ -16,19 +16,7 @@ class SwiperRow extends Component<Props> {
         text, button, buttonText, onPressButton,
       },
     } = this;
-    /*return (
-      <View style={styles.container}>
-        <Text>{text}</Text>
-        {button ? (
-          <Button
-            buttonStyle={styles.buttonStyle}
-            buttonTextStyle={styles.buttonTextStyle}
-            text={buttonText}
-            onPress={onPressButton}
-          />
-        ) : null}
-      </View>
-    );*/
+
     return (
       <View style = {styles.swiperRow}>
         <Image
@@ -83,7 +71,6 @@ SwiperRow.defaultProps = {
   text: '',
   textBold: '',
   buttonText: '',
-  //button: ()=>{}
 };
 
 export default SwiperRow;

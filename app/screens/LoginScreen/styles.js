@@ -47,35 +47,27 @@ const styles = {
     color: '#206C9D',
     fontSize: 18
   },
-  socialMediaStyles: {
-      flex: 1,
-      marginTop: screenHeight*0.030,
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-  },
-  googlePlusButtonStyle: {
-    width: screenWidth*0.426,
-    height: screenHeight*0.061,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 5
-  },
-  facebookButtonStyle: {
-    width: screenWidth*0.426,
-    height: screenHeight*0.061,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 5
-  },
   forgotPassword: {
+    marginTop: screenHeight*0.035,
+    color:'#ffffffEE',
     textAlign: 'center',
-    fontSize:14,
+    fontWeight: '600',
     fontFamily: 'Apple SD Gothic Neo',
-    color: '#FFFFFF',
-    top: 20
+  },
+  createAccount: {
+    marginTop: screenHeight*0.045,
+    color:'#ffffffEE',
+    textAlign: 'center',
+    fontWeight: '600',
+    fontFamily: 'Apple SD Gothic Neo',
   },
   iconBtn: {
     margin: 8,
     backgroundColor: '#FFFFCC'
-},
+  },
+  touchable: {
+    flex: 1,
+  },
 };
 
 export default styles;

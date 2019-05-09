@@ -46,20 +46,14 @@ class ProfileScreen extends Component<Props> {
             <View style={styles.bodyContent}>
               <Text style={styles.name}>Efe Ali Özkesici</Text>
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Yaş: </Text>  
+                <Text>Yaş: 22</Text>  
               </TouchableOpacity>              
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Boy:</Text> 
+                <Text>Boy: 188</Text> 
               </TouchableOpacity>
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Kilo:</Text> 
+                <Text>Kilo: 90</Text> 
               </TouchableOpacity>
-              <Button
-              buttonStyle = {styles.logoutButton}
-              buttonTextStyle = {styles.logoutButtonText}
-              text = "Cikis Yap"
-              onPress={() => {this.signOut();}}
-              />
             </View>
         </View>
       </View>

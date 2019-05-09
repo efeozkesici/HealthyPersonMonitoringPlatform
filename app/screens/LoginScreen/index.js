@@ -9,17 +9,23 @@ import * as AuthActions from 'actions/auth';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
 import {images} from '../../resources';
+import { Navigate } from 'utils';
 
 type Props = any;
+
 type State = {
   serviceCall: boolean,
   icons: Array<Object>
 };
+
 class LoginScreen extends Component<Props, State> {
   static defaultProps: any;
 
   constructor(props) {
     super(props);
+    const {
+      props: { componentId },
+    } = this;
     this.state = {
       serviceCall: false,
     };
@@ -67,6 +73,7 @@ class LoginScreen extends Component<Props, State> {
     const {
       props: { auth, button, placeholderStyle },
     } = this;
+
     return (
       <View style={styles.container}>
         {auth.isLoading ? <Loading /> : null}
@@ -104,11 +111,15 @@ class LoginScreen extends Component<Props, State> {
           />
           
           <View>
-            <TouchableOpacity>
-              <Text style= {styles.forgotPassword}>Şifremi Unuttum</Text>
+            <TouchableOpacity style={styles.touchable} activeOpacity={0.6}>
+              <Text style= {styles.createAccount}>Hesap Olustur</Text>
               <Text></Text>
             </TouchableOpacity>
-            </View>
+            <TouchableOpacity style={styles.touchable} activeOpacity={0.6} onPress={() => Navigate.push(componentId, 'ForgotPasswordScreen')}>
+            <Text style= {styles.forgotPassword}>Şifremi Unuttum</Text>
+            <Text></Text>
+            </TouchableOpacity>
+          </View>
         </View>
         </KeyboardAwareScrollView>
       </View>
@@ -119,11 +130,12 @@ class LoginScreen extends Component<Props, State> {
 LoginScreen.propTypes = {
   loginEmail: propTypes.func.isRequired,
   button: propTypes.func,
+  componentId: propTypes.string.isRequired
 };
 
 LoginScreen.defaultProps = {
-  textMailInput:'',
-  textPasswordInput:'',
+  /*textMailInput:'',
+  textPasswordInput:'',*/
 };
 
 const mapStateToProps = state => ({
