@@ -24,13 +24,13 @@ class ProfileScreen extends Component<Props> {
     } = this;
   }
 
-  signOut(): void {
+  /*signOut(): void {
     firebase.auth().signOut().then(function() {
       Navigate.push(componentId, 'LoginScreen');
     }).catch(function(error) {
       // An error happened.
     });
-  }
+  }*/
 
   render() {
     /*return (

@@ -107,3 +107,69 @@ module.exports = {
   events,
   constants,
 };
+
+/*import { Navigation } from 'react-native-navigation';
+
+const to = (navigator, screen, params = {}) => {
+  navigator.push({
+    screen,
+    passProps: {
+      ...params,
+    },
+    animated: true,
+    navigatorStyle: {
+      tabBarHidden: true,
+      navBarHidden: true,
+      screenBackgroundColor: '#FFFFFF',
+    },
+  });
+};
+
+const pop = (navigator) => {
+  navigator.pop();
+};
+
+const popToRoot = (navigator, componentId) => {
+  navigator.popToRoot(componentId);
+}
+
+const showModal = (navigator, screen, params={}, navigatorStyle = {}, animationType='slide-up' ) =>{
+  navigator.showModal({
+    screen, 
+    passProps: {
+      ...params
+    }, 
+    title:null,
+    navigatorButtons: {
+      leftButtons: [
+        {}
+      ]
+    },
+    navigatorStyle: {
+      navBarHidden: true,
+      ...navigatorStyle
+    }, 
+    animationType
+  });
+}
+
+const dismissModal = (navigator, animationType='slide-down')=>{
+  navigator.dismissModal({
+    animationType
+  })
+}
+
+const dismissAllModals = (navigator, animationType='slide-down')=>{
+  navigator.dismissAllModals({
+    animationType
+  })
+}
+
+module.exports = {
+  to,
+  pop,
+  popToRoot,
+  showModal,
+  dismissModal,
+  dismissAllModals
+};*/
