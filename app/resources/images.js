@@ -11,7 +11,7 @@ module.exports = {
   left_arrow: require('./images/left-arrow.png'),
   running_icon: require('./images/running_icon.png'),
   running_man: require('./images/running_man.png'),
-  blood_pressure: require('./images/blood_pressure'),
-  cardiogram: require('./images/cardiogram'),
-  hearth_rate: require('./images/hearth_rate')
+  blood_pressure: require('./images/blood_pressure.png'),
+  cardiogram: require('./images/cardiogram.png'),
+  heart_rate: require('./images/heart_rate.png')
 };

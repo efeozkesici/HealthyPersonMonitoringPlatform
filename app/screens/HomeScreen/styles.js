@@ -7,117 +7,36 @@ const screenHeight = Dimensions.get('window').height;
 
 
 const styles = {
-  /*container: {
+  container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },*/
-  container: {
-    backgroundColor: '#2c3e50',
-    paddingTop: 15
+    /*justifyContent: 'center',
+    alignItems: 'center',*/
   },
-  logoContainer: {
+  firstMenuView: {
+    top: screenHeight*0.034,
     flexDirection: 'row',
-    alignItems: 'center',
-    flexGrow: 1,
-    marginBottom: 10
+    justifyContent: 'space-between',
+    minHeight: 200,
   },
-  clock:{
-    height:40,
-    width: 40
+  secondMenuView: {
+
   },
-  title: {
-    color: 'white',
-    fontSize: 30,
-    fontWeight: 'bold',
-    padding: 10
-  },
-  firstLastContainer: {
-    paddingBottom: 10,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  totalsContainer: {
-    padding: 10,
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  totals: {
-    color: '#f39c12',
-    fontSize: 20
-  },
-  user: {
-    color: '#f39c12',
-    fontSize: 35
-  },
-  age: {
-    color: 'white',
-    fontSize: 20
-  },
-  small: {
-    color: 'white',
-    fontSize: 20
-  },
-  smaller: {
-    color: 'white',
-    fontSize: 13
-  },
-  infoCards: {
-    margin: 10,
-    padding: .5
-  },
-  imageContainer: {
-    alignItems: 'center'
-  },
-  images: {
-    height: 55,
-    width: 55
-  },
-  stepTextContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
+  menuButton: {
+    flex: 1,
+    width:screenWidth*0.49,
+    backgroundColor:'#D5D5D5',
     borderRadius: 5,
-    padding: 5,
-    borderLeftWidth: .5,
-    borderRightWidth: .5,
-    borderBottomWidth: .5,
-    borderColor: '#f39c12',
-    backgroundColor: 'rgba(243, 156, 18, 0.1)',
-    borderRadius: 5
-  },
-  distanceWalkRunContainer: {
-    justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 5,
-    padding: 5,
-    borderLeftWidth: .5,
-    borderRightWidth: .5,
-    borderBottomWidth: .5,
-    borderColor: '#f39c12',
-    backgroundColor: 'rgba(243, 156, 18, 0.1)',
-    borderRadius: 5
-  },
-  flightsClimbedContainer: {
     justifyContent: 'center',
-    alignItems: 'center',
-    borderRadius: 5,
-    padding: 5,
-    borderLeftWidth: .5,
-    borderRightWidth: .5,
-    borderBottomWidth: .5,
-    borderColor: '#f39c12',
-    backgroundColor: 'rgba(243, 156, 18, 0.1)',
-    borderRadius: 5
   },
-  buttonContainer: {
-    backgroundColor: '#2c3e50',
-    paddingVertical: 15
+  runningManImageStyle: {
+    width: screenWidth*0.20,
+    height: screenHeight*0.20,
   },
-  buttonText: {
-    textAlign: 'center',
-    color: '#FFF',
-    fontWeight: '700'
+  heartRateImageStyle: {
+    width: screenWidth*0.30,
+    height: screenHeight*0.20,
   }
 };
 
