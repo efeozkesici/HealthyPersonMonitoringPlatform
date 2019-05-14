@@ -31,7 +31,15 @@ class HomeScreen extends Component<Props> {
               <Image
               style={styles.heartRateImageStyle}
               source={images['heart_rate']}/>
+              <Text> </Text>
               <Text>Nabız Görüntüle</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.secondMenuView}>
+          <TouchableOpacity onPress={() => {console.log('heart pressure')}}>
+            <View style={styles.menuButton}>
+              <Text>Tansiyon Görüntüle</Text>
             </View>
           </TouchableOpacity>
         </View>
