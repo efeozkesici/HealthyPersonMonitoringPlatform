@@ -6,19 +6,23 @@ const screenHeight = Dimensions.get('window').height;
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0F94B4',
   },
   containerView: {
     flex: 0.95,
-    backgroundColor: '#fff',
+    backgroundColor: '#0F94B4',
     margin: 15,
   },
   title: {
-    color: '#19769F',
+    color: '#FFFFFF',
     fontSize: 30,
     fontFamily: 'Gotham Rounded',
-    marginTop: screenHeight/30,
-    marginBottom:screenHeight/40
+    marginTop: screenHeight * 0.172,
+    marginLeft: screenWidth * 0.209,
+  },
+  mailInput: {
+    borderRadius: 5,
+    top: screenHeight * 0.293,
   },
   formContainer: {
     flex: 1,
@@ -28,70 +32,80 @@ const styles = {
     marginTop: 30,
     marginBottom: 20,
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   remember: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   text: {
     fontFamily: 'Gotham Rounded',
-    fontSize:16,
-    color:'#95989A',
+    fontSize: 16,
+    color: '#95989A',
   },
   forgatPassText: {
     fontFamily: 'Gotham Rounded',
-    fontSize:16,
-    color:'#95989A',
-    marginRight:10
+    fontSize: 16,
+    color: '#95989A',
+    marginRight: 10,
   },
   orText: {
     fontFamily: 'Gotham Rounded',
     fontSize: 16,
     color: '#95989A',
     textAlign: 'center',
-    marginTop: screenWidth/20,
-    alignItems: 'center'
+    marginTop: screenWidth / 20,
+    alignItems: 'center',
   },
-  buttonView: {
-    marginTop: 20,
+  buttonStyle: {
+    marginTop: screenHeight * 0.036,
+    backgroundColor: '#FFF',
+    width: screenWidth * 0.813,
+    height: screenHeight * 0.061,
+    marginLeft: screenWidth * 0.053,
   },
-  buttonText: {
+  textStyle: {
+    marginTop: screenHeight * 0.036,
+    marginLeft: screenWidth * 0.208,
+    color: '#FFF',
+    fontFamiliy: 'Apple SD Gothic Neo',
+    fontSize: 16,
+  },
+  buttonTextStyle: {
+    fontWeight: 'Apple SD Gothic Neo',
+    color: '#206C9D',
     fontSize: 18,
-    fontFamily: 'Raleway',
-    fontWeight: 'bold', 
-    color: '#FFFFFF',
   },
   socialLoginView: {
-    marginTop: screenWidth/20,
+    marginTop: screenWidth / 20,
     flexDirection: 'row',
     minHeight: 50,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
-  socialLoginButton:{
-    flex:1,
-    width: (screenWidth-70)/2,
+  socialLoginButton: {
+    flex: 1,
+    width: (screenWidth - 70) / 2,
     borderWidth: 1,
-    borderColor:'#D5D5D5' ,
+    borderColor: '#D5D5D5',
     borderRadius: 5,
-    alignItems:'center',
-    justifyContent: 'center'
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  createAccount:{
-    marginTop:30,
+  createAccount: {
+    marginTop: 30,
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
-  accountText:{
+  accountText: {
     fontFamily: 'Gotham Rounded',
     fontSize: 16,
     color: '#95989A',
   },
-  createAccountButton:{
+  createAccountButton: {
     fontFamily: 'Gotham Rounded',
     fontSize: 16,
     color: '#19769F',
-  }
+  },
 };
 
 export default styles;

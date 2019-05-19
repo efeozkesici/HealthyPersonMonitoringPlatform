@@ -1,4 +1,4 @@
-package com.starterkit;
+package com.healtyPersonMonitoringPlatform;
 
 import com.reactnativenavigation.NavigationActivity;
 

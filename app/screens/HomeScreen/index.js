@@ -4,6 +4,7 @@ import { View, Text, ScrollView, Image, Button, KeyboardAvoidingView, TouchableO
 import { connect } from 'react-redux';
 import styles from './styles';
 import {images} from '../../resources';
+import { Navigate } from 'utils';
 
 type Props = any;
 
@@ -16,7 +17,7 @@ class HomeScreen extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <View style = {styles.firstMenuView}>
+        <View style={styles.firstMenuView}>
           <TouchableOpacity onPress={() => {console.log('step')}}>
             <View style= {styles.menuButton}>
               <Image
@@ -37,10 +38,15 @@ class HomeScreen extends Component<Props> {
           </TouchableOpacity>
         </View>
         <View style={styles.secondMenuView}>
-          <TouchableOpacity onPress={() => {console.log('heart pressure')}}>
+          <TouchableOpacity onPress={() => Navigate.push(componentId, "ShowPersonalStepsScreen")}>
             <View style={styles.menuButton}>
               <Text>Tansiyon Görüntüle</Text>
             </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+              <View style={styles.menuButton}>
+                <Text>Ölçüm Yap</Text>
+              </View>
           </TouchableOpacity>
         </View>
       </View>

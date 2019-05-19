@@ -1,11 +1,12 @@
 {
-  "name": "starterkit",
+  "name": "healtyPersonMonitoringPlatform",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "run-android": "cd ./android && ./gradlew clean && ./gradlew app:assembleDebug && start cmd.exe /k yarn start -- --reset-cache && ./gradlew installDebug && cd .. && adb shell monkey -p com.starterkit -c android.intent.category.LAUNCHER 1 ",
+    "run-android": "cd ./android && ./gradlew clean && ./gradlew app:assembleDebug && start cmd.exe /k yarn start -- --reset-cache && ./gradlew installDebug && cd .. && adb shell monkey -p com.healtyPersonMonitoringPlatform -c android.intent.category.LAUNCHER 1 ",
+    "android-start": "adb reverse tcp:8081 tcp:8081 && yarn start -- --reset-cache",
     "flow-start": "flow start",
     "flow-stop": "flow stop",
     "flow-status": "flow status",
@@ -19,6 +20,7 @@
     "react-native-keyboard-aware-scroll-view": "^0.8.0",
     "react-native-navigation": "^2.7.0",
     "react-native-swiper": "^1.5.14",
+    "react-native-wheel-picker-android": "^2.0.5",
     "react-navigation": "^3.9.1",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",

@@ -8,7 +8,6 @@ import { FormValidation, Alert, Navigate } from 'utils';
 import * as AuthActions from 'actions/auth';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import styles from './styles';
-import {images} from '../../resources';
 
 type Props = any;
 
@@ -22,9 +21,6 @@ class LoginScreen extends Component<Props, State> {
 
   constructor(props) {
     super(props);
-    const {
-      props: { componentId },
-    } = this;
     this.state = {
       serviceCall: false,
     };
@@ -70,7 +66,7 @@ class LoginScreen extends Component<Props, State> {
 
   render() {
     const {
-      props: { auth, button, placeholderStyle },
+      props: { auth, componentId },
     } = this;
 
     return (
@@ -82,16 +78,18 @@ class LoginScreen extends Component<Props, State> {
           keyboardShouldPersistTaps="handled"
           showsVerticalScrollIndicator={false}
         >
-        <View style={styles.formContainer}>
+          <View style={styles.formContainer}>
             <Text style={styles.title}>Giriş</Text>
-            <TextInputCustom style={styles.textMailInput}
+            <TextInputCustom
+              style={styles.textMailInput}
               ref={(ref) => {
                 (this: any).emailField = ref;
               }}
               placeholder="E-Mail"
               placeholderTextColor="white"
             />
-            <TextInputCustom style={styles.textPasswordInput}
+            <TextInputCustom
+              style={styles.textPasswordInput}
               ref={(ref) => {
                 (this: any).passwordField = ref;
               }}
@@ -101,25 +99,22 @@ class LoginScreen extends Component<Props, State> {
               returnKeyType="done"
             />
             <Button
-            buttonStyle = {styles.buttonStyle}
-            buttonTextStyle={styles.buttonTextStyle}
-            text="Giriş"
-            onPress={() => {
-              this.emailLogin();
-            }}
-          />
-          
-          <View>
-            <TouchableOpacity style={styles.touchable} activeOpacity={0.6}>
-              <Text style= {styles.createAccount}>Hesap Olustur</Text>
-              <Text></Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.touchable} activeOpacity={0.6} onPress={() => Navigate.push(componentId, 'ForgotPasswordScreen')}>
-            <Text style= {styles.forgotPassword}>Şifremi Unuttum</Text>
-            <Text></Text>
-            </TouchableOpacity>
+              buttonStyle={styles.buttonStyle}
+              buttonTextStyle={styles.buttonTextStyle}
+              text="Giriş"
+              onPress={() => {
+                this.emailLogin();
+              }}
+            />
+            <View>
+              <TouchableOpacity style={styles.touchable} activeOpacity={0.6}>
+                <Text style={styles.createAccount}>Hesap Olustur</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.touchable} activeOpacity={0.6} onPress={() => Navigate.push(componentId, 'ForgotPasswordScreen')}>
+                <Text style={styles.forgotPassword}>Şifremi Unuttum</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
         </KeyboardAwareScrollView>
       </View>
     );
@@ -128,14 +123,9 @@ class LoginScreen extends Component<Props, State> {
 
 LoginScreen.propTypes = {
   loginEmail: propTypes.func.isRequired,
-  button: propTypes.func,
-  componentId: propTypes.string.isRequired
 };
 
-LoginScreen.defaultProps = {
-  /*textMailInput:'',
-  textPasswordInput:'',*/
-};
+LoginScreen.defaultProps = {};
 
 const mapStateToProps = state => ({
   auth: state.auth,

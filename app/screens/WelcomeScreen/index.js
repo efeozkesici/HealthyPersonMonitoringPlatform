@@ -27,8 +27,8 @@ class WelcomeScreen extends Component<Props, State> {
     this.state = {
       swipeElements: [
         {
-          image1: 'infusion_icon',
-          text: 'Enjeksiyon kaydı özelliği ile enjeksiyonlarınız kolayca kayıt altına alın.',
+          image1: 'heart_rate',
+          text: 'Nabız özelliği ile nabızınızı kontrol edebilirsiniz.',
           button:null
         },
         {
