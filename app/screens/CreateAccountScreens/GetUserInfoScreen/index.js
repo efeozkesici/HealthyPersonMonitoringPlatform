@@ -14,7 +14,7 @@ type State = {
 class GetUserInfoScreen extends Component<Props, State> {
   static defaultProps: any;
 
-  onPress() {
+  /* onPress() {
     const {
       props: { componentId },
     } = this;
@@ -24,12 +24,14 @@ class GetUserInfoScreen extends Component<Props, State> {
       eMail: this.emailField.getText(),
       cellPhone: this.cellPhoneField.getText(),
       password: this.passwordField.getText(),
-      passwordAgain: this.passwordAgainField.getText(),
     };
     Navigate.push(componentId, 'GetUserBirthday', params);
-  }
+  } */
 
   render() {
+    const {
+      props: { componentId },
+    } = this;
     return (
       <View style={styles.container}>
         <KeyboardAwareScrollView
@@ -72,9 +74,7 @@ class GetUserInfoScreen extends Component<Props, State> {
             style={styles.buttonView}
             textStyle={styles.buttonText}
             text="Sonra"
-            onPress={() => {
-              this.onPress();
-            }}
+            onPress={() => Navigate.push(componentId, 'GetUserBirthday')}
           />
         </KeyboardAwareScrollView>
       </View>

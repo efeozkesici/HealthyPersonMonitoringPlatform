@@ -31,9 +31,7 @@ class HomeScreen extends Component<Props> {
             </View>
           </TouchableOpacity>
           <TouchableOpacity
-            onPress={() => {
-              console.log('pulse');
-            }}
+            onPress={() => Navigate.push(componentId, 'ShowPulseScreen')}
           >
             <View style={styles.menuButton}>
               <Image

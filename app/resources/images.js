@@ -20,4 +20,7 @@ module.exports = {
   stairs_forward: require('./images/stairs-forward.png'),
   stairs: require('./images/stairs.png'),
   step_heart: require('./images/step-heart.png'),
+  face_03: require('./images/Face_03.png'),
+  pulse: require('./images/pulse.png'),
+  fill_03: require('./images/Fill_03.png'),
 };
