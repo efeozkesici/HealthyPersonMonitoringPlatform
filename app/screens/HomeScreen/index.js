@@ -19,9 +19,8 @@ class HomeScreen extends Component<Props> {
       <View style={styles.container}>
         <View style={styles.firstMenuView}>
           <TouchableOpacity
-            onPress={() => {
-              console.log('step');
-            }}
+            onPress={() => Navigate.push(componentId, 'ShowPersonalStepsScreen')
+            }
           >
             <View style={styles.menuButton}>
               <Image
@@ -47,11 +46,13 @@ class HomeScreen extends Component<Props> {
           </TouchableOpacity>
         </View>
         <View style={styles.secondMenuView}>
-          <TouchableOpacity
-            onPress={() => Navigate.push(componentId, 'ShowPersonalStepsScreen')
-            }
-          >
+          <TouchableOpacity>
             <View style={styles.menuButton}>
+              <Image
+                style={styles.bloodPressureImageStyle}
+                source={images.blood_pressure}
+              />
+              <Text />
               <Text>Tansiyon Görüntüle</Text>
             </View>
           </TouchableOpacity>

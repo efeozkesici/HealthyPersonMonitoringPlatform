@@ -1,10 +1,10 @@
 /* @flow */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { View, Image, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import { connect } from 'react-redux';
 import Swiper from 'react-native-swiper';
-import {images} from '../../resources'
+import { images } from '../../resources';
 import { Navigate } from 'utils';
 import SwiperRow from './SwiperRow';
 import styles from './styles';
@@ -32,8 +32,8 @@ class WelcomeScreen extends Component<Props, State> {
           button:null
         },
         {
-          image2: 'bleeding_icon',
-          text: 'Kanama kaydı özelliği ile kanamalarınızı kolayca kayıt altına alın',
+          image2: 'blood_pressure',
+          text: 'Tansiyon özelliği ile tansiyonunuzu kayıt altında tutabilirsiniz.',
           button: null
         },
         {
@@ -41,7 +41,7 @@ class WelcomeScreen extends Component<Props, State> {
           text: 'Fiziksel aktivite kaydı ile aktivitelerinizi kayıt altına alın',
           button: true,
           buttonText: 'Başla',
-          onPressButton: () => {Navigate.push(componentId, 'LoginScreen');}
+          onPressButton: () => { Navigate.push(componentId, 'LoginScreen'); }
         }
       ],
       disableSwip:true
@@ -52,11 +52,11 @@ class WelcomeScreen extends Component<Props, State> {
     return (
       <View style = {styles.container}>
         <Swiper
-          onMomentumScrollEnd={(e, state, context)=>{
-            if(state.index == 2){
-              this.setState({disableSwip:false})
+          onMomentumScrollEnd={(e, state, context) => {
+            if (state.index == 2) {
+              this.setState( { disableSwip: false } )
             } else {
-              this.setState({disableSwip:true})
+              this.setState( { disableSwip: true } )
             }
           }}
           activeDotStyle={styles.activeDotStyle}
