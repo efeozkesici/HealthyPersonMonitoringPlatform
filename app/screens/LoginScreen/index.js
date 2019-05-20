@@ -107,7 +107,7 @@ class LoginScreen extends Component<Props, State> {
               }}
             />
             <View>
-              <TouchableOpacity style={styles.touchable} activeOpacity={0.6}>
+              <TouchableOpacity style={styles.touchable} activeOpacity={0.6} onPress={() => Navigate.push(componentId, 'GetUserInfoScreen')}>
                 <Text style={styles.createAccount}>Hesap Olustur</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.touchable} activeOpacity={0.6} onPress={() => Navigate.push(componentId, 'ForgotPasswordScreen')}>

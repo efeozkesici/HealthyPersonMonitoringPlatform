@@ -13,5 +13,11 @@ module.exports = {
   running_man: require('./images/running_man.png'),
   blood_pressure: require('./images/blood_pressure.png'),
   cardiogram: require('./images/cardiogram.png'),
-  heart_rate: require('./images/heart_rate.png')
+  heart_rate: require('./images/heart_rate.png'),
+  footsteps: require('./images/footsteps.png'),
+  runner: require('./images/runner.png'),
+  running: require('./images/running.png'),
+  stairs_forward: require('./images/stairs-forward.png'),
+  stairs: require('./images/stairs.png'),
+  step_heart: require('./images/step-heart.png'),
 };

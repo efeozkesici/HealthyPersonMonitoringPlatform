@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
-import { Button, TextInputCustom, Loading } from 'components';
+import { Button, TextInputCustom } from 'components';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { FormValidation, Alert, Navigation } from 'utils';
 import styles from './styles';
 
 type Props = any;
