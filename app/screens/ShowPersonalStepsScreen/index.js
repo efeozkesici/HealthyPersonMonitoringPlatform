@@ -34,7 +34,7 @@ class ShowPersonalStepsScreen extends Component<Props, State> {
       <ScrollView style={styles.container}>
         <View style={styles.userInfo}>
           <View style={styles.totalsContainer}>
-            <Text style={styles.totals}>Yesterdays Totals</Text>
+            <Text style={styles.totals}>Günlük Toplam</Text>
           </View>
 
           <View style={styles.infoCards}>
@@ -43,8 +43,8 @@ class ShowPersonalStepsScreen extends Component<Props, State> {
             </View>
 
             <View style={styles.stepTextContainer}>
-              <Text style={styles.small}>1000</Text>
-              <Text style={styles.smaller}>Steps</Text>
+              <Text style={styles.small}>10000</Text>
+              <Text style={styles.smaller}>Adım</Text>
             </View>
           </View>
 
@@ -54,8 +54,8 @@ class ShowPersonalStepsScreen extends Component<Props, State> {
             </View>
 
             <View style={styles.distanceWalkRunContainer}>
-              <Text style={styles.small}> 3 Miles </Text>
-              <Text style={styles.smaller}>Distance Walk/Run</Text>
+              <Text style={styles.small}> 3 Km </Text>
+              <Text style={styles.smaller}>Yürüme - Koşma Mesafesi</Text>
             </View>
           </View>
 
@@ -65,9 +65,9 @@ class ShowPersonalStepsScreen extends Component<Props, State> {
             </View>
             <View style={styles.flightsClimbedContainer}>
               <Text style={styles.small}>
-                <Text style={styles.smaller}>stories</Text>
+                <Text style={styles.smaller}>7 Kat</Text>
               </Text>
-              <Text style={styles.smaller}>Flights Climbed</Text>
+              <Text style={styles.smaller}>Çıkılan Kat</Text>
             </View>
           </View>
         </View>

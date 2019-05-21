@@ -56,6 +56,8 @@ class HomeScreen extends Component<Props> {
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={styles.menuButton}>
+              <Image style={styles.measureImageStyle} source={images.measure} />
+              <Text />
               <Text>Ölçüm Yap</Text>
             </View>
           </TouchableOpacity>

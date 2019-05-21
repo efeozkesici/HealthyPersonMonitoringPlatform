@@ -23,4 +23,5 @@ module.exports = {
   face_03: require('./images/Face_03.png'),
   pulse: require('./images/pulse.png'),
   fill_03: require('./images/Fill_03.png'),
+  measure: require('./images/measure.png'),
 };

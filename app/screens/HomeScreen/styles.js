@@ -9,6 +9,7 @@ const styles = {
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    top: screenHeight * 0.05,
   },
   firstMenuView: {
     top: screenHeight * 0.034,
@@ -40,6 +41,10 @@ const styles = {
     height: screenHeight * 0.2,
   },
   bloodPressureImageStyle: {
+    width: screenWidth * 0.2,
+    height: screenHeight * 0.12,
+  },
+  measureImageStyle: {
     width: screenWidth * 0.2,
     height: screenHeight * 0.12,
   },

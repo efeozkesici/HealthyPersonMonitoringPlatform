@@ -94,9 +94,9 @@ const styles = {
   },
   dashStatus: {
     color: '#84D12D',
-    fontSize: 40,
+    fontSize: 30,
     fontWeight: 'bold',
-    bottom: screenHeight * 0.055,
+    bottom: screenHeight * 0.02,
     right: screenWidth * 0.1,
   },
   weeklyImage: {
