@@ -44,7 +44,10 @@ class HomeScreen extends Component<Props> {
           </TouchableOpacity>
         </View>
         <View style={styles.secondMenuView}>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => Navigate.push(componentId, 'ShowBloodPressureScreen')
+            }
+          >
             <View style={styles.menuButton}>
               <Image
                 style={styles.bloodPressureImageStyle}

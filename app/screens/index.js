@@ -10,6 +10,7 @@ import ForgotPasswordScreen from './ForgotPasswordScreen';
 import { GetUserInfoScreen, GetUserBirthday, GetPhysicalProperties } from './CreateAccountScreens';
 import ShowPersonalStepsScreen from './ShowPersonalStepsScreen';
 import ShowPulseScreen from './ShowPulseScreen';
+import ShowBloodPressureScreen from './ShowBloodPressureScreen';
 
 // registering all screens with redux...
 export default function registerScreens(store: any = null) {
@@ -24,4 +25,5 @@ export default function registerScreens(store: any = null) {
   Navigation.registerComponent('GetUserBirthday', Redux.reduxStoreWrapper(GetUserBirthday, store));
   Navigation.registerComponent('GetPhysicalProperties', Redux.reduxStoreWrapper(GetPhysicalProperties, store));
   Navigation.registerComponent('ShowPulseScreen', Redux.reduxStoreWrapper(ShowPulseScreen, store));
+  Navigation.registerComponent('ShowBloodPressureScreen', Redux.reduxStoreWrapper(ShowBloodPressureScreen, store));
 }
