@@ -46,13 +46,13 @@ class ProfileScreen extends Component<Props> {
             <View style={styles.bodyContent}>
               <Text style={styles.name}>Efe Ali Özkesici</Text>
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Yaş: 22</Text>  
+                <Text>Yaş: 65</Text>  
               </TouchableOpacity>              
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Boy: 188</Text> 
+                <Text>Boy: 178</Text> 
               </TouchableOpacity>
               <TouchableOpacity disabled={true} style={styles.buttonContainer}>
-                <Text>Kilo: 90</Text> 
+                <Text>Kilo: 84</Text>
               </TouchableOpacity>
             </View>
         </View>

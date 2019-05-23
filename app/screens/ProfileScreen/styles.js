@@ -7,24 +7,24 @@ const screenHeight = Dimensions.get('window').height;
 
 const styles = {
   header: {
-    backgroundColor: "#00BFFF",
-    height: 150
+    backgroundColor: '#00BFFF',
+    height: 150,
   },
 
-  avatar:{
+  avatar: {
     width: 130,
     height: 130,
     borderRadius: 63,
     borderWidth: 4,
-    borderColor: "white",
-    marginBottom:10,
-    alignSelf:'center',
+    borderColor: 'white',
+    marginBottom: 10,
+    alignSelf: 'center',
     position: 'absolute',
-    marginTop:80
+    marginTop: 80,
   },
 
-  body:{
-    marginTop: 40
+  body: {
+    marginTop: 40,
   },
 
   bodyContext: {
@@ -33,58 +33,58 @@ const styles = {
     padding: 30,
   },
 
-  name:{
-    fontSize:28,
-    color: "#696969",
-    fontWeight: "600",
-    marginLeft: screenWidth*0.30,
-    marginTop: screenHeight*0.04
+  name: {
+    fontSize: 28,
+    color: '#696969',
+    fontWeight: '600',
+    marginLeft: screenWidth * 0.3,
+    marginTop: screenHeight * 0.04,
   },
 
-  info:{
-    fontSize:16,
-    color: "#00BFFF",
-    marginTop:10
+  info: {
+    fontSize: 16,
+    color: '#00BFFF',
+    marginTop: 10,
   },
 
-  description:{
-    fontSize:16,
-    color: "#696969",
-    marginTop:10,
-    textAlign: 'center'
+  description: {
+    fontSize: 16,
+    color: '#696969',
+    marginTop: 10,
+    textAlign: 'center',
   },
 
   buttonContainer: {
-    marginTop:10,
-    height:45,
+    marginTop: 10,
+    height: 45,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom:20,
-    width:250,
-    borderRadius:30,
-    backgroundColor: "#00BFFF",
-    marginLeft: screenWidth * 0.20
+    marginBottom: 20,
+    width: 250,
+    borderRadius: 30,
+    backgroundColor: '#00BFFF',
+    marginLeft: screenWidth * 0.2,
   },
 
   buttonStyle: {
     backgroundColor: '#FF0000',
-    width:250,
-    height: screenHeight*0.045
+    width: 250,
+    height: screenHeight * 0.045,
   },
 
   buttonTextStyle: {
     fontWeight: 'Apple SD Gothic Neo',
     color: '#206C9D',
-    fontSize: 18
-  }
+    fontSize: 18,
+  },
 
-  /*container: {
+  /* container: {
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
     alignItems: 'center',
-  }*/
+  } */
 };
 
 export default styles;

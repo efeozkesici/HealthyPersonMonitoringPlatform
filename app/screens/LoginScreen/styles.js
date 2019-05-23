@@ -7,11 +7,11 @@ const screenWidth = Dimensions.get('window').width;
 const styles = {
   container: {
     flex: 1,
-    backgroundColor: '#0F94B4',
+    backgroundColor: '#00BFFF',
     justifyContent: 'center',
   },
   containerView: {
-    backgroundColor: '#0F94B4',
+    backgroundColor: '#00BFFF',
     margin: 15,
   },
   textMailInput: {

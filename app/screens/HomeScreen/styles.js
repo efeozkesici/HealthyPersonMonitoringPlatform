@@ -27,7 +27,7 @@ const styles = {
     flex: 1,
     width: screenWidth * 0.49,
     height: screenHeight * 0.48,
-    backgroundColor: '#D5D5D5',
+    backgroundColor: '#00BFFF',
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',

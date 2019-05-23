@@ -1,5 +1,5 @@
 /* @flow */
-/*const styles = {
+/* const styles = {
   container: {
     flex: 1,
     alignItems: 'center',
@@ -14,7 +14,7 @@
     fontWeight: 'bold',
     color: '#FFF',
   },
-};*/
+}; */
 import { Dimensions } from 'react-native';
 
 const screenWidth = Dimensions.get('window').width;
@@ -25,38 +25,38 @@ const styles = {
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor:'#0F94B4'
+    backgroundColor: '#00BFFF',
   },
   image1: {
-    width: screenWidth*0.682,
-    height: screenHeight*0.315,
+    width: screenWidth * 0.682,
+    height: screenHeight * 0.315,
     resizeMode: 'contain',
     marginBottom: 40,
-    marginTop: screenHeight*0.100
+    marginTop: screenHeight * 0.1,
   },
   image2: {
     resizeMode: 'contain',
     marginBottom: 40,
-    position:'absolute',
-    marginTop: screenHeight*0.029,
-    width: screenWidth*0.952,
-    height: screenHeight*0.439
+    position: 'absolute',
+    marginTop: screenHeight * 0.089,
+    width: screenWidth * 0.852,
+    height: screenHeight * 0.339,
   },
-  image3:{
+  image3: {
     resizeMode: 'contain',
     marginBottom: 40,
-    position:'absolute',
-    marginTop: screenHeight*0.062,
-    width: screenWidth*0.946,
-    height: screenHeight*0.437
+    position: 'absolute',
+    marginTop: screenHeight * 0.062,
+    width: screenWidth * 0.946,
+    height: screenHeight * 0.437,
   },
-  /*whiteArea:{
+  /* whiteArea:{
     resizeMode: 'contain',
     position: 'absolute',
     width: screenWidth,
     marginTop: (screenHeight/4),
     height:(screenHeight/7)*5,
-    
+
   },
   textView:{
     resizeMode: 'contain',
@@ -72,16 +72,16 @@ const styles = {
     fontSize: 25,
     fontFamily: 'Gotham Rounded',
     color: '#3E3E3E'
-  },*/
+  }, */
   text: {
     textAlign: 'center',
-    /*width: screenWidth*0.9700,*/
-    height: screenHeight*0.201,
-    /*marginTop:screenHeight*0.397,*/
-    marginHorizontal: screenWidth*0.029,
-    fontSize:35,
+    /* width: screenWidth*0.9700, */
+    height: screenHeight * 0.201,
+    /* marginTop:screenHeight*0.397, */
+    marginHorizontal: screenWidth * 0.029,
+    fontSize: 35,
     fontFamily: 'Bold',
-    color: '#FFFFFF'
+    color: '#FFFFFF',
   },
   buttonView: {
     marginHorizontal: 50,
@@ -89,18 +89,18 @@ const styles = {
     bottom: 50,
   },
   buttonStyle: {
-    width: screenWidth*0.906,
-    height: screenHeight*0.049,
+    width: screenWidth * 0.906,
+    height: screenHeight * 0.049,
     backgroundColor: '#3864A6',
     borderRadius: 5,
     position: 'absolute',
-    top:screenHeight*0.86
+    top: screenHeight * 0.86,
   },
   buttonTextStyle: {
-    fontSize:18,
+    fontSize: 18,
     fontFamily: 'Gotham Rounded',
-    color: '#FFF'
-  }
+    color: '#FFF',
+  },
 };
 
 export default styles;
