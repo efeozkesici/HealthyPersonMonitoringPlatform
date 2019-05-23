@@ -21,4 +21,5 @@ module.exports = {
   fill_03: require('./images/Fill_03.png'),
   measure: require('./images/measure.png'),
   pressure: require('./images/pressure.png'),
+  header_left_arrow: require('./images/header-left-arrow.png'),
 };

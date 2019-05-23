@@ -1,21 +1,30 @@
 /* @flow */
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { connect } from 'react-redux';
+import { GiftedChat } from 'react-native-gifted-chat';
 import styles from './styles';
 
 type Props = any;
 
 class MessagingScreen extends Component<Props> {
+  /* constructor(props) {
+    super(props);
+  } */
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>MessagingScreen</Text>
+        <GiftedChat />
       </View>
     );
   }
 }
 
 const mapStateToProps = null;
+const mapDispatchToProps = null;
 
-export default connect(mapStateToProps)(MessagingScreen);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(MessagingScreen);
